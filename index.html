@@ -1,44 +1,167 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
   <head>
     <meta charset="utf-8">
-    <title>Progate</title>
-    <link rel="stylesheet" href="stylesheet.scss">
+    <title>hanuseimeruna</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis:300,400,500,600,700">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
   </head>
   <body>
+    <!-- ヘッダー -->
     <header>
-      畠山わんこ一家のホームページ
+      <div class="container">
+        <div class="header-title">
+          <div id="top-btn" class="header-logo">畠山わんこ一家</div>
+        </div>
+        <div class="header-menu">
+          <ul class="header-menu-right">
+            <li>
+              <a href="#stamps">LINEスタンプ</a>
+            </li>
+            <li>
+              <a href="#interview">インタビュー</a>
+            </li>
+            <li>
+              <a href="#contact">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <div class="profile">
-      <img class="profile-img" src="https://sei20200420.web.app/img/20200419kuma1.PNG">
-      <div class="info">
-        <p>畠山わんこ一家のホームページです！</p>
-        <p>ぼくの勉強記録を公開しています。</p>
+
+    <!-- トップ部分 -->
+    <div class="top-section gray-section">
+      <div class="top-inner">
+        <div class="container">
+          <div class="top-description">
+            <h2>ようこそ！めるの部屋へ！</h2>
+            <p>畠山一家「める」の日常です。</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="hanu">
-      <h4>パパさん</h4>
-      <img src="https://sei20200420.web.app/img/20200419hanu1.PNG">
-      <a href="#">内容をみる</a>
+
+    <!-- スライダー -->
+    <div id="stamps" class="stamps-section">
+      <div class="container">
+        <div class="section-title">
+          <h3>LINEスタンプ大好評発売中！</h3>
+        </div>
+        <div id="stamp-carousel" class="carousel slide" data-ride="carousel"> 
+          <ol class="carousel-indicators">
+            <li data-target="#stamp-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#stamp-carousel" data-slide-to="1" class=""></li>
+            <li data-target="#stamp-carousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item stamp-box active">
+              <img src="https://gazousouko02.web.app/img/20200419meru7.PNG" class="stamp-image">
+              <h4>めるがLINEスタンプに登場！</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="https://gazousouko02.web.app/img/20200419meru20.PNG">
+              <h4>めるんぽ関連のスタンプも！</h4>
+            </div>
+            <div class="item stamp-box">
+              <img src="https://sei20200417.web.app/img/runaIntro.PNG" class="stamp-image">
+              <h4>新キャラ・るなも！</h4>
+            </div>
+          </div> 
+        </div> 
+        <p>全40種類！使いやすく、可愛い！めるの日常を表現したスタンプです！<br>
+          ご購入は<a class="stamp-link" href="https://store.line.me/" target="_blank"> こちら</a>（LINE STORE）から！
+        </p>
+      </div>
     </div>
-    <div class="sei">
-      <h4>ママさん</h4>
-      <img src="https://sei20200420.web.app/img/20200419sei1.PNG">
-      <a href="#">内容をみる</a>
+
+    <!-- インタビュー -->
+    <div id="interview" class="interview-section">
+      <div class="interview-section-top gray-section">
+        <div class="container">
+          <div class="section-title">
+            <h3>特別インタビュー</h3>
+          </div>
+          <img class="interview-image" src="https://gazousouko01-2f461.web.app/img/20200419meru16.PNG">
+        </div>
+      </div>
+      <div class="interview-section-bottom">
+        <div class="container">
+          <div class="interview-box">
+            <h5>Q. 普段はどのような活動をされているのですか？</h5>
+            基本的に、札幌のおうちでママさん、るな、それとたまーに帰ってくるパパさんの為に番犬としての務めを果たしています。お寝坊さんのママさんにご飯の催促をしたり、お散歩の催促をしながら怪しい人間が攻撃してこないように警備しています。
+          </div>
+          <div class="interview-box">
+            <h5>Q. めるさんは、どんなことが出来るのですか？また、得意なことは何ですか？</h5>
+            ママさんが具合が悪そうなときは身体の悪い所を温めています。人間は悪い所を温めるだけで良くなるということを知らないようなので、僕のお腹でじっくり温めています。<br>
+            得意なことは、お散歩中のいたずらです。その時はママさんもパパさんも、るなじゃなくて僕のことを見てくれるから。
+          </div>
+          <div class="interview-box">
+            <h5>Q. 好きな食べものは何ですか？やっぱりモグワンですか？</h5>
+            アカナも好きです。でもお腹が緩くなるのでママさんがカナガンとアカナとモグワンを調理して最高のバランスで一日に何度か分けてご飯をくれます。個人的には夜寝る前のご飯が一番待ち遠しいです。<br>
+            ママさんが時々くれる豆乳や、野菜が大好きです。一度食べ過ぎてお腹を壊してから、あまりくれなくなったのが残念です。でも、新しいおやつが増えたのでそれが楽しみです。
+          </div>
+          <div class="interview-box">
+            <h5>Q. 最後に、今後の抱負について教えてください。</h5>
+            最近はマンションで不審な物音がすることが多いので、番犬としてママさんにその都度教えてあげています。るなはまだその大事さがわかっていないので、僕が見本になってあげています。るなも少しずつ大切さがわかってきたみたいです。パパさんがいない間は僕がこのおうちとママさん、るなを守るのが使命なのでこれからも頑張ります。
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- ここにrubyを追加してください -->
-    <div class="meru">
-      <h4>める</h4>
-      <img src="https://sei20200420.web.app/img/20200419meru16.PNG">
-      <a href="#">内容をみる</a>
-    </div>
-    <div class="runa">
-      <h4>るな</h4>
-      <img src="https://sei20200420.web.app/img/runa.PNG">
-      <a href="#">内容をみる</a>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-section gray-section">
+      <div class="contact-section-inner">
+        <div class="container">
+          <div class="section-title">
+            <h3>お問い合わせ</h3>
+          </div>
+          <div class="contact-form">
+            <h4>メッセージを送る</h4>
+            <form>
+              <div class="error-message"></div>
+              <input type="text" name="name" placeholder="お名前" class="contact-name">
+              <div class="error-message"></div>
+              <input type="text" name="email" placeholder="メールアドレス" class="contact-email">
+              <div class="error-message"></div>
+              <textarea name="message" placeholder="メッセージ内容"></textarea>
+              <button type="submit" class="btn btn-contact">送信</button>
+            </form>
+          </div>
+          <div class="contact-about">
+            <h4>About Me</h4>
+            <p>畠山わんこ一家の長男。小さいころからパパさんに甘やかされて育ったせいか、パパさんと一緒の時はわがままが爆発する傾向がある。パパさんが帰ってきたときは朝のお散歩イベントが発生するため、なんとなく楽しみにしている。<br>
+              パパさんがいない時はママさんの話し相手になっている。ヒト語が話せないが、ママさんの言っていることはふんわりと理解している。るなが来てからは長男としての意識が高くなり、守るべきものが増えたと責任感を強くしている。
+            </p>
+            <h4>Address</h4>
+            <p>
+              <i class="fa fa-map-marker"></i>北海道豊平区
+            </p>
+            <p>
+              <i class="fa fa-phone"></i>Phone: 011-×××-××××
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
-      ©hanuseimeruna
+      <div class="container">
+        <div class="follow-us">
+          <a href="https://www.facebook.com/Progate-742679992421539" class="social-icon" target='_blank'>
+            <span class="fa fa-facebook"></span>
+          </a>
+          <a href="https://twitter.com/progatejp" class="social-icon" target='_blank'>
+            <span class="fa fa-twitter"></span>
+          </a>
+        </div>
+        <div class="copyright">©hanuseimeruna
+        </div>
+      </div>
     </footer>
+
+    <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
