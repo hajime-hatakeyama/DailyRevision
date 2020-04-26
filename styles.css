@@ -144,6 +144,7 @@ header {
 
 .heading h2 {
   font-weight: normal;
+  display:inline-block
 }
 
 .lesson {
@@ -218,4 +219,9 @@ footer {
   font-size: 25px;
   padding: 21px 0;
   display: none;
+}
+
+#text {
+  /* display: none; */
+  color: hsl(0, 100%, 100%);
 }
