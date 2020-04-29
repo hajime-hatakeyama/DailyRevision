@@ -1,7 +1,6 @@
 $(function () {
   const $change = $("#change-css");
   const $text = $("#text");
-  const $runa2 = $("#runa2");
 
   $change.click(function () {
     document.getElementById("papa2").src = "img/20200419hanu2.PNG";
@@ -21,5 +20,16 @@ $(function () {
     $text.css("text-decoration", "underline");
     // document.getElementById("text").href = "http://google.co.jp";
     // $text.fadeOut(2000);
+  });
+
+  $(function () {
+    $(".lesson-icon").hover(
+      function () {
+        $(".txt-contents").fadeIn();
+      },
+      function () {
+        $(".txt-contents").fadeOut();
+      }
+    );
   });
 });
