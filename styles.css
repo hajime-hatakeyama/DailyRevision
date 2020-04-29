@@ -165,7 +165,7 @@ header {
 
 .txt-contents {
   width: 80%;
-  display: inline-block;
+  display: none;
   margin-top: 15px;
   font-size: 13px;
   color: #b3aeb5;
