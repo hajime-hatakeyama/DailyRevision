@@ -1,4 +1,5 @@
 $(function () {
+  // 画像を変える処理
   const $change = $("#change-css");
   const $text = $("#text");
 
@@ -7,21 +8,15 @@ $(function () {
     document.getElementById("mama2").src = "img/20200419sei2.PNG";
     document.getElementById("meru2").src = "img/20200419meru5.PNG";
     document.getElementById("runa2").src = "img/runaIntro2.PNG";
-    // document.getElementById("text").href = "http://google.co.jp";
+   
     $change.html("登録済み");
-    // document.getElementById($text).innerHTML(
-    //   <h1>
-    //     <a href="movie/runa20200422.mp4">"ようこそ！畠山わんこ一家へ!")</a>
-    //   </h1>
-    // );
+ 
     $text.html("ボタンを押した後、もう一度写真を見てみて!");
     $text.css("color", "red");
     $text.css("font-size", "30px");
-    $text.css("text-decoration", "underline");
-    // document.getElementById("text").href = "http://google.co.jp";
-    // $text.fadeOut(2000);
+    $text.css("text-decoration", "underline");  
   });
-
+  // メッセージを隠しておく処理
   $(function () {
     $(".lesson-icon").hover(
       function () {
@@ -31,5 +26,18 @@ $(function () {
         $(".txt-contents").fadeOut();
       }
     );
+  });
+  // モーダルの処理
+  $('#login-show').click(function(){
+    $('#login-modal').fadeIn();
+  });
+  
+  $('.signup-show').click(function(){
+    $('#signup-modal').fadeIn();
+  });  
+
+  $('.close-modal').click(function() {
+    $('#login-modal').fadeOut();
+    $('#signup-modal').fadeOut();
   });
 });
