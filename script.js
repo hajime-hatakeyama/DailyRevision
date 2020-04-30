@@ -14,7 +14,7 @@ $(function () {
     //     <a href="movie/runa20200422.mp4">"ようこそ！畠山わんこ一家へ!")</a>
     //   </h1>
     // );
-    $text.html("ボタンを押した後<br>もう一度写真を見てみて!");
+    $text.html("ボタンを押した後、もう一度写真を見てみて!");
     $text.css("color", "red");
     $text.css("font-size", "30px");
     $text.css("text-decoration", "underline");
