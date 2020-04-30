@@ -1,10 +1,10 @@
 /* タブレット向けレイアウト */
-@media (max-width:1000px) {
+@media (max-width: 1000px) {
   .lesson {
-    width:50%;
-    margin-bottom:50px;
+    width: 50%;
+    margin-bottom: 50px;
   }
-  
+
   .top-wrapper h1 {
     font-size: 32px;
   }
@@ -15,6 +15,9 @@
 
   .menu-icon {
     display: none;
+  }
+  .signup-modal-wrapper {
+    width: 100%;
   }
 }
 
@@ -27,20 +30,20 @@
   footer {
     text-align: center;
   }
-  
+
   .btn {
-    width:100%;
+    width: 100%;
   }
 
   .facebook {
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
 
   .top-wrapper {
-    text-align:left;
-    padding-top:130px;
+    text-align: left;
+    padding-top: 130px;
     font-size: 24px;
-  }  
+  }
 
   .top-wrapper h1 {
     font-size: 24px;
@@ -56,5 +59,12 @@
 
   .header-right {
     display: none;
+  }
+
+  .modal {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+
   }
 }
