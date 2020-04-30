@@ -34,6 +34,60 @@
         </div>
       </div>
     </header>
+    <!-- ここからモーダル -->
+    <!-- sign-up モーダル -->
+    <div class="signup-modal-wrapper" id="signup-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <div>
+            <i class="fas fa-times fa-2x"></i>
+          </div>
+        </div>
+        <div id="signup-form">
+          <h2>Emailで新規登録</h2>
+          <form action="#">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="メールアドレス"
+            />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="パスワード"
+            />
+            <div id="submit-btn">新規登録</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 新規登録モーダル -->
+    <div class="login-modal-wrapper" id="login-modal">
+      <div class="modal">
+        <div class="close-modal">
+          <div>
+            <i class="fas fa-times fa-2x"></i>
+          </div>
+        </div>
+        <div id="login-form">
+          <h2>Emailログイン</h2>
+          <form action="#">
+            <input
+              class="form-control"
+              type="text"
+              placeholder="メールアドレス"
+            />
+            <input
+              class="form-control"
+              type="password"
+              placeholder="パスワード"
+            />
+            <div id="submit-btn">ログイン</div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- ここまでモーダル -->
     <div class="top-wrapper">
       <div class="container">
         <h1>HAPPY WANKO LIFE!</h1>
@@ -43,7 +97,7 @@
           コロナで厳しい日々だけれども、気持ちだけでも楽しくいられるように明るい話題を探していこう。
         </p>
         <div class="btn-wrapper">
-          <a href="#" class="btn signup">新規登録はこちら</a>
+          <a href="#" class="btn signup signup-show">新規登録はこちら</a>
           <p>or sign up with</p>
           <a href="#" class="btn facebook"
             ><i class="fab fa-facebook-f faa-ring animated"></i>
@@ -113,6 +167,16 @@
         </h1>
       </div>
     </div>
+    <!-- ここからfaq-wrapper -->
+    <div class="faq-wrapper">
+      <div class="container">
+        <div class="heading">
+          <h2>FAQ</h2>
+        </div>
+        <div class="faq"></div>
+      </div>
+    </div>
+    <!-- ここまでfaq-wrapper -->
     <footer>
       <div class="container">
         <img class="footer-logo" src="img/dog-solid.ico" />
