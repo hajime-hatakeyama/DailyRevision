@@ -28,64 +28,12 @@
           <i class="fas fa-bars"></i>
         </a>
         <div class="header-right">
-          <div id="login-show" class="login">ログイン</div>
+          <a href="#">レッスン</a>
+          <a href="#">新規登録</a>
+          <a href="#" class="login">ログイン</a>
         </div>
       </div>
     </header>
-    <!-- ここからモーダル -->
-    <!-- sign-up モーダル -->
-    <div class="signup-modal-wrapper" id="signup-modal">
-      <div class="modal">
-        <div class="close-modal">
-          <div>
-            <i class="fas fa-times fa-2x"></i>
-          </div>
-        </div>
-        <div id="signup-form">
-          <h2>Emailで新規登録</h2>
-          <form action="#">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="メールアドレス"
-            />
-            <input
-              class="form-control"
-              type="password"
-              placeholder="パスワード"
-            />
-            <div id="submit-btn">新規登録</div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- 新規登録モーダル -->
-    <div class="login-modal-wrapper" id="login-modal">
-      <div class="modal">
-        <div class="close-modal">
-          <div>
-            <i class="fas fa-times fa-2x"></i>
-          </div>
-        </div>
-        <div id="login-form">
-          <h2>Emailログイン</h2>
-          <form action="#">
-            <input
-              class="form-control"
-              type="text"
-              placeholder="メールアドレス"
-            />
-            <input
-              class="form-control"
-              type="password"
-              placeholder="パスワード"
-            />
-            <div id="submit-btn">ログイン</div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- ここまでモーダル -->
     <div class="top-wrapper">
       <div class="container">
         <h1>HAPPY WANKO LIFE!</h1>
@@ -95,7 +43,7 @@
           コロナで厳しい日々だけれども、気持ちだけでも楽しくいられるように明るい話題を探していこう。
         </p>
         <div class="btn-wrapper">
-          <a href="#" class="btn signup signup-show">新規登録はこちら</a>
+          <a href="#" class="btn signup">新規登録はこちら</a>
           <p>or sign up with</p>
           <a href="#" class="btn facebook"
             ><i class="fab fa-facebook-f faa-ring animated"></i>
@@ -113,7 +61,7 @@
           <h2>楽しいメンバー達</h2>
         </div>
         <div class="lessons">
-          <div class="lesson lesson-hover">
+          <div class="lesson">
             <div class="lesson-icon">
               <img id="papa2" class="introduce" src="img/20200419hanu1.PNG" />
               <p>パパさん</p>
@@ -122,7 +70,7 @@
               普段は東京で仕事をしています。時々ママさんがくれるワンコたちの動画が楽しみで生きています。
             </p>
           </div>
-          <div class="lesson lesson-hover">
+          <div class="lesson">
             <div class="lesson-icon">
               <img id="mama2" class="introduce" src="img/20200419sei1.PNG" />
               <p>ママさん</p>
@@ -131,7 +79,7 @@
               普段は札幌で暮らしています。ワンコたちとのお散歩は楽しいけれど、膝が痛くなるのはちと辛い。。
             </p>
           </div>
-          <div class="lesson lesson-hover">
+          <div class="lesson">
             <div class="lesson-icon">
               <img id="meru2" class="introduce" src="img/20200419meru4.PNG" />
               <p>める</p>
@@ -140,7 +88,7 @@
               近頃のわんご飯がとても美味しくて、毛並みもふわふわんこになってきました。ママさん、いつもありがとう！
             </p>
           </div>
-          <div class="lesson lesson-hover">
+          <div class="lesson">
             <div class="lesson-icon">
               <img id="runa2" class="introduce" src="img/runaIntro.PNG" />
               <p>るな</p>
@@ -159,50 +107,12 @@
           <h2>さぁ、楽しいワンコライフの始まりだよ！</h2>
           <h3>Let's live to be happy, live to be creative!</h3>
         </div>
-        <span id="change-css" class="btn message">さっそく仲間になる</span>
+        <span id="change-css" class="btn message" data-descr="写真が変わるよ！">さっそく仲間になる</span>
         <h1 id="text">
           <a href="img/20200419kuma1.PNG">↑上のボタンを押してね！↑</a>
         </h1>
       </div>
     </div>
-    <!-- ここからfaq-wrapper -->
-    <div class="faq-wrapper">
-      <div class="container">
-        <div class="heading">
-          <h2>FAQ</h2>
-        </div>
-        <div class="faq">
-          <ul id="faq-list">
-            <li class="faq-list-item">
-              <h3 class="question">めるさんとるなさんの犬種はなんですか？</h3>
-              <span>+</span>
-              <div class="answer">
-                <p>
-                  僕たちは純血のプードルです。時々雑種に間違われます（笑）血統書もあります。
-                </p>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <h3 class="question">
-                めるさんとるなさんが一番好きな事は何ですか？
-              </h3>
-              <span>+</span>
-              <div class="answer">
-                <p>ママさんが作ってくれるご飯を夢中で食べる事と、お散歩で走り回ることです。</p>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <h3 class="question">めるさんとるなさんはパパさんとママさん、どちらが好き？</h3>
-              <span>+</span>
-              <div class="answer">
-                <p>ワン、ワワン！キャン、キャキャン！（なぜかここだけワン語 （笑））</p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!-- ここまでfaq-wrapper -->
     <footer>
       <div class="container">
         <img class="footer-logo" src="img/dog-solid.ico" />
