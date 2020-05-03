@@ -1,5 +1,9 @@
 * {
   box-sizing: border-box;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -246,5 +250,6 @@ span[data-descr]:hover::after {
   color: hsl(0, 0%, 100%);
   font-size: 14px;
   z-index: 1;
+  user-select: none;
 }
 /* ここまでツールチップ */
