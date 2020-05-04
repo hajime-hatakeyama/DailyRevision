@@ -17,24 +17,24 @@ $(function () {
     $text.css("text-decoration", "underline");
   });
   // メッセージを隠しておく処理
-  $(function () {
-    $(".lesson-icon").hover(
-      function () {
-        $(".txt-contents").fadeIn();
-      },
-      function () {
-        $(".txt-contents").fadeOut();
-      }
-    );
-  });
-  // $(".lesson-hover").hover(
-  //   function () {
-  //     $(this).find(".text-contents").addClass("text-active");
-  //   },
-  //   function () {
-  //     $(this).find(".text-contents").removeClass("text-active");
-  //   }
-  // );
+  // $(function () {
+  //   $(".lesson-icon").hover(
+  //     function () {
+  //       $(".txt-contents").fadeIn();
+  //     },
+  //     function () {
+  //       $(".txt-contents").fadeOut();
+  //     }
+  //   );
+  // });
+  $(".lesson-hover").hover(
+    function () {
+      $(this).find(".txt-contents").addClass("text-active");
+    },
+    function () {
+      $(this).find(".txt-contents").removeClass("text-active");
+    }
+  );
   // モーダルの処理
   $("#login-show").click(function () {
     $("#login-modal").fadeIn();
