@@ -1,9 +1,5 @@
 * {
   box-sizing: border-box;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 body {
@@ -27,8 +23,20 @@ a {
   margin: 0 auto;
 }
 
-.login {
-  margin: 0 auto;
+.header-right {
+  background-color: hsl(0, 0%, 50%);  
+  margin: 7px;
+  height: 50px;
+  width: 100px;
+  opacity: 0.8;
+}
+.header-right .login {
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  display: block;
+  padding: 10px 10px;
+  margin: 3px auto;
 }
 
 .introduce {
@@ -131,6 +139,72 @@ header {
 .header-right a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+/* ここからモーダル */
+.login-modal-wrapper,
+.signup-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: none;  
+}
+
+.modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+#signup-form,
+#login-form {
+  width: 100%;
+}
+
+#signup-form h2,
+#login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+#signup-form input,
+#login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+#submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
+/* ここまでモーダル */
 
 .lesson-wrapper {
   padding-bottom: 80px;
@@ -154,6 +228,7 @@ header {
 .lesson {
   float: left;
   width: 25%;
+  cursor: pointer;
 }
 
 .lesson-icon {
@@ -166,14 +241,19 @@ header {
   width: 100%;
   color: white;
 }
-
+/* テキストを隠す処理ここから */
 .txt-contents {
   width: 80%;
   display: none;
-  margin-top: 15px;
+  margin: 15px auto;
   font-size: 13px;
   color: #b3aeb5;
 }
+
+.text-active {
+  display: block;
+}
+/* テキストを隠す処理ここまで */
 
 .heading h3 {
   font-weight: normal;
@@ -197,6 +277,51 @@ header {
   top: 7px;
   box-shadow: none;
 }
+
+/* ここからfaq wrapper */
+.faq-wrapper {
+  background-color: #e6ecf0;
+  text-align: center;
+  padding-bottom: 80px;
+  color: #5f5d60;
+}
+
+#faq-list {
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.faq-list-item {
+  margin:10px;
+  border-bottom:1px solid #ccc;
+  position:relative;
+  cursor:pointer;
+  text-align: left;
+}
+
+.faq-list-item h3 {
+  font-size: 14px;
+}
+
+.faq-list-item span {
+  position:absolute;
+  top:0;
+  right:5px;
+  color:#ccc;
+  font-size:13px;
+}
+
+.answer {
+  font-size: 12px;
+  padding: 5px 0px;
+  margin-bottom: 15px;
+  /* displayプロパティをnoneにしてください */
+  display: none;
+  
+}
+/* ここまでfaq wrapper */
 
 footer img {
   width: 125px;
